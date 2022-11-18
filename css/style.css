@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: lightgrey;
+    overflow-x: hidden;
+}
+.head{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.615);
+    width: 100%;
+    height: 5em;
+    position: fixed;
+    z-index: 3;
+}
+.head i{
+    height: 100%;
+    font-size: 2.5rem;
+    margin-right: 20px;
+    color: white;
+    line-height: 5rem;
+    display: none;
+}
+.head h1{
+    color: orangered;
+    font-size: 4vmin;
+    display: flex;
+    align-items: center;
+    margin-left: 2.8%;
+}
+.head span{
+    color: rgb(255, 255, 255);
+}
+.head ul{
+    display: flex;
+    margin: auto;
+    margin-right: 1%;
+}
+.head ul li{
+    list-style-type: none;
+    margin-left: 0px;
+}
+.head a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 3px;
+    font-size: 1rem;
+    transition: .5s;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+.head .active{
+    border: 2px solid orangered;
+    color: orangered;
+}
+.head a:hover{
+    color: orangered;
+    padding: 10px;
+    border: 2px solid orangered;
+    text-shadow: 1px 0px 0px black;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.619);
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+    background-image: url(/foodimg/spicy3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.overlay h1{
+    margin-top: 40vmin;
+    color: orangered;
+    text-shadow: 3px 0px 3px black;
+    text-align: center;
+    font-size: 6vmin;  
+}
+.overlay span{
+    color: rgb(255, 255, 255);
+}
+.overlay h4{
+    color: rgb(250, 246, 246); 
+    margin-top: 0px;
+    text-align: center;
+    font-size: 4vmin;
+    text-shadow: 3px 0px 2px black;
+    margin-bottom: 100px;
+
+}
+
+.cs{
+    margin-top: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/foodimg/desert.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.cards{
+    border: 1px solid rgb(255, 255, 255);
+    width: 380px;
+    height: 380px;
+    margin: 2%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px black;
+    background-color: rgba(211, 211, 211, 0.504);
+    transition: .10s;
+    z-index: 2;
+}
+.cards:hover{
+    background-color: rgba(255, 255, 255, 0.753);
+    transform: scale(1.1);
+    z-index: 2;
+}
+.cards img{  
+    width: 370px;
+    height: 200px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+.cards h1{
+    text-align: center;
+    color: rgb(218, 44, 9); 
+    font-weight: bold; 
+    text-shadow: 2px 0px 2px black;
+}
+.cards p{
+    letter-spacing: 0.7px;
+    margin: 1.2%;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.cards input{
+    color: rgb(255, 255, 255);
+    background-color: orangered;
+    margin: 15px ;
+    padding: 8px 6px ;
+    border-radius: 15px;
+    width: 100px;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+.cards input:hover{
+    color: black;
+    background-color: transparent;
+    border: 2px solid orangered;
+    text-transform: uppercase;
+}
+.search form{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    background-color: orangered;
+}
+.search input{
+    width: 70vmax;
+    height: 50px;
+    font-size: 20px;
+    margin-right: 5px;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 0px 15px;
+}
+.search button{
+    padding: 16.5px 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: rgb(255, 60, 0);
+    font-weight: bold;
+    font-family: verdana;
+}
+.search button:hover{
+    background-color: #fff;
+    color: orangered;
+    border:1px solid black;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media(max-width:380px){
+    .cards{
+        width: 80vmin;
+        margin-bottom: 20px;
+    }
+    .cards img{
+        width: 78vmin;
+    }
+    .head i{
+        font-size: 8vmin;
+    }
+
+}
+@media(max-width:768px){
+    .head li a{
+        font-size: 0.8rem;
+    }
+    .head h1{
+        font-size: 1.7rem;
+        width: 500px;
+    }
+}
+
+@media (max-width:600px){
+    .head ul{
+        display:none;
+    }
+    .head i{
+        width: 100%;
+        display: flex;
+        position: relative;
+        right: -30vmin;
+    }
+    .head h1{
+        font-size: 1.5rem;
+    }
+    .search form{
+        height: 130px;
+    }
+    .search input{
+        width: 50%;
+        height: 30px;
+        font-size: 0.5rem;
+        border: 1px solid black;
+        margin-right: 0;
+    }
+    .search button{
+        width: 15%;
+        text-align: center;
+        font-size: 0.7rem;
+        padding: 9.5px 0;
+        margin-left: 0;
+        outline: none;
+        border: 1px solid rgb(0, 0, 0);
+    }
+    .footer{
+        font-size: 1rem;
+        height: 50px;
+    }
+    .head h1{
+        font-size: 6vmin;
+    }
+
+}
+
